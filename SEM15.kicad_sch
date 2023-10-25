@@ -9,6 +9,47 @@
   )
 
   (lib_symbols
+    (symbol "Connector:Conn_01x01_Male" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x01_Male" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x01_Male_1_1"
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 0.8636 0)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 0.8636 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type outline))
+        )
+        (pin passive line (at 5.08 0 180) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector_Generic:Conn_01x04" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1725,6 +1766,61 @@
     )
   )
 
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 207.264 99.822 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 01c28ca7-fb72-4487-9a74-4c916eabbd87)
+    (property "Reference" "J2" (at 206.629 95.25 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 206.629 97.79 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 207.264 99.822 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 207.264 99.822 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0c029369-cb4e-4e5b-9c9c-736cda6d3b02))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 201.422 116.586 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 042b96a7-dcd5-4f9e-a6a1-2a6d04a44d2a)
+    (property "Reference" "#PWR030" (at 195.072 116.586 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 197.358 117.221 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 201.422 116.586 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 201.422 116.586 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ae6e9e7f-f827-4ec4-b0f5-24c1785b5f16))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR030") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:VCC") (at 176.53 48.768 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04ac8882-988d-44fa-b4df-291f62efe771)
@@ -1745,6 +1841,36 @@
       (project "SEM15"
         (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
           (reference "#PWR019") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 202.184 99.822 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 05b0aacb-ed20-4246-be79-39a94206add1)
+    (property "Reference" "#PWR032" (at 195.834 99.822 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 198.12 100.457 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 202.184 99.822 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 202.184 99.822 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dbb15713-fa77-434d-86f9-ce6b4a723771))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR032") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1916,6 +2042,36 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 201.676 121.412 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 10f78ebb-653d-4bb7-b11f-484f890640c6)
+    (property "Reference" "#PWR031" (at 195.326 121.412 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 197.612 122.047 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 201.676 121.412 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 201.676 121.412 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fdb9db55-6cbb-4a9f-93d4-1df24ee01dde))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR031") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 136.144 114.808 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c9fa5f4-cbab-455a-adca-34c7b40411fa)
@@ -1973,6 +2129,31 @@
       (project "karifa"
         (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
           (reference "Q?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 207.518 128.524 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1d4ceb2e-59c1-49c7-ab3e-68f096c25c3f)
+    (property "Reference" "J9" (at 206.883 123.952 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 206.883 126.492 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 207.518 128.524 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 207.518 128.524 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a1ebbdc7-5217-48e0-982f-395ec376831f))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -2200,6 +2381,36 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 202.438 104.648 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2ba312e0-c062-4c3f-be33-523babbd8f9b)
+    (property "Reference" "#PWR027" (at 196.088 104.648 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 198.374 105.283 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 202.438 104.648 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 202.438 104.648 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 572ee205-fb70-40ac-9655-bf61ef165e9b))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR027") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:LED") (at 64.77 36.83 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 323c7133-f6ec-412f-a2f7-acafdfad182c)
@@ -2273,6 +2484,36 @@
       (project "SEM15"
         (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
           (reference "D9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 202.946 108.204 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 361604e8-d900-4ac0-bd6b-de0ba734f12f)
+    (property "Reference" "#PWR028" (at 196.596 108.204 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 198.882 108.839 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 202.946 108.204 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 202.946 108.204 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9be3d842-ee5d-46bd-8901-5e03a3d0b8ea))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR028") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2417,6 +2658,31 @@
     )
   )
 
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 207.518 104.648 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 427d1886-7c89-4e13-9efd-37201dd8327a)
+    (property "Reference" "J3" (at 206.883 100.076 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 206.883 102.616 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 207.518 104.648 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 207.518 104.648 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2966c254-e246-4406-b64b-04fa8d82b307))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J3") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 172.974 167.386 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 49553f7a-0744-4d3c-b846-b8e7cf8e56bd)
@@ -2535,6 +2801,31 @@
     )
   )
 
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 206.502 116.586 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 581a965e-0d4e-4202-81f3-9537f75ad937)
+    (property "Reference" "J6" (at 205.867 112.014 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 205.867 114.554 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 206.502 116.586 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 206.502 116.586 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5ac4c676-6705-455b-9453-f7016068069c))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J6") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:VCC") (at 150.876 45.974 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 622328ea-d958-4c4a-86fa-6b0329782368)
@@ -2638,6 +2929,36 @@
       (project "karifa"
         (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
           (reference "Q?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 203.2 111.76 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6a1ad5ad-f728-4538-9aff-8243c635052c)
+    (property "Reference" "#PWR029" (at 196.85 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 199.136 112.395 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 203.2 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 203.2 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9d51f01d-8540-4ed0-80d9-eebf232eb261))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR029") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2969,6 +3290,36 @@
       (project "SEM15"
         (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
           (reference "#PWR05") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 202.438 128.524 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 93dab53a-51f8-4f3c-8d9d-38b185222b8c)
+    (property "Reference" "#PWR034" (at 196.088 128.524 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 198.374 129.159 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 202.438 128.524 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 202.438 128.524 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9ee624cc-e65f-40d5-a869-ecd130021fb6))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR034") (unit 1)
         )
       )
       (project "karifa"
@@ -3605,6 +3956,61 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 202.184 124.968 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ce5bcfbd-e309-4d5a-b6c0-fecf9b9a5856)
+    (property "Reference" "#PWR033" (at 195.834 124.968 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 198.12 125.603 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 202.184 124.968 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 202.184 124.968 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b875d85c-c177-4948-a828-b0cad9f591af))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "#PWR033") (unit 1)
+        )
+      )
+      (project "karifa"
+        (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
+          (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 208.026 108.204 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d4ef70dc-5ff5-4337-963c-cc3ba8231051)
+    (property "Reference" "J4" (at 207.391 103.632 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 207.391 106.172 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 208.026 108.204 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 208.026 108.204 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a4450483-d58a-4022-9c8d-45c988902e4e))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J4") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Transistor_FET:AO3401A") (at 60.198 121.158 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d5225fd7-8a85-4bde-af08-34d79311524e)
@@ -3689,6 +4095,31 @@
     )
   )
 
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 207.264 124.968 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ddfa610e-fb98-4e4f-9de5-30b671e3f6cc)
+    (property "Reference" "J8" (at 206.629 120.396 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 206.629 122.936 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 207.264 124.968 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 207.264 124.968 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 649b913a-e55a-4e0b-a50a-dd529e442402))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J8") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 119.634 192.786 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e6a1d12b-d5ed-4200-b237-c6eae94cdbf6)
@@ -3714,6 +4145,56 @@
       (project "karifa"
         (path "/30f28fd8-ef05-4208-b612-7ffefcdba2ba"
           (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 206.756 121.412 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid edd1089f-0987-401a-8e36-b1d2a08b37e4)
+    (property "Reference" "J7" (at 206.121 116.84 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 206.121 119.38 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 206.756 121.412 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 206.756 121.412 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4c21a8d6-a586-41c3-85b5-2b760e9baeac))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x01_Male") (at 208.28 111.76 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f0832f63-6aa6-4feb-bbb7-8696f60871fd)
+    (property "Reference" "J5" (at 207.645 107.188 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x01_Male" (at 207.645 109.728 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 208.28 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 208.28 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b1d75c34-7811-45f9-be6d-c4454a854be8))
+    (instances
+      (project "SEM15"
+        (path "/0fdb131f-7535-4030-b35f-e7b26b07455b"
+          (reference "J5") (unit 1)
         )
       )
     )
