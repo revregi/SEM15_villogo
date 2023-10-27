@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/david/sem/SEM15_villogo/SEM15.kicad_sch</source>
-    <date>2023. okt. 26., csütörtök, 12:01:33 CEST</date>
+    <date>2023. okt. 27., péntek, 11:52:35 CEST</date>
     <tool>Eeschema 7.0.1-3b83917a11~171~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -168,7 +168,7 @@
       <tstamps>1e4f6da2-0844-4b80-ac5f-c4a222a96f2e</tstamps>
     </comp>
     <comp ref="D11">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -190,7 +190,7 @@
       <tstamps>f8bd58eb-aafb-4a30-ba8c-b86d60ad7fe1</tstamps>
     </comp>
     <comp ref="D13">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -201,7 +201,7 @@
       <tstamps>1f586833-28b5-441b-92c1-7605c0410576</tstamps>
     </comp>
     <comp ref="D14">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -212,7 +212,7 @@
       <tstamps>219d83ae-7692-4060-91a1-2f90870831bd</tstamps>
     </comp>
     <comp ref="D15">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -223,7 +223,7 @@
       <tstamps>875fd9af-88ab-4fdb-b0e8-2bddb7257627</tstamps>
     </comp>
     <comp ref="D17">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -234,7 +234,7 @@
       <tstamps>0116edf7-f1d5-40e9-bbf9-5da512179c94</tstamps>
     </comp>
     <comp ref="D18">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -245,7 +245,7 @@
       <tstamps>7fa1d2df-3223-4511-b48f-61cb8f5aaba6</tstamps>
     </comp>
     <comp ref="D19">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -256,7 +256,7 @@
       <tstamps>820e1114-daa2-4aec-995f-5aedf4ee6aad</tstamps>
     </comp>
     <comp ref="D20">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -278,7 +278,7 @@
       <tstamps>f225ce5d-244d-4f48-a06d-15953a4c1308</tstamps>
     </comp>
     <comp ref="D22">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -289,7 +289,7 @@
       <tstamps>65e2b99d-c9a7-4241-a436-74bf979a818b</tstamps>
     </comp>
     <comp ref="D23">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -300,7 +300,7 @@
       <tstamps>9af9b42d-8aaf-4525-bcc9-7c2a78a184a2</tstamps>
     </comp>
     <comp ref="D24">
-      <value>LED</value>
+      <value>LED_G</value>
       <footprint>LED_SMD:LED_0805_2012Metric</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
@@ -441,28 +441,6 @@
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>edd1089f-0987-401a-8e36-b1d2a08b37e4</tstamps>
-    </comp>
-    <comp ref="J8">
-      <value>Conn_01x01_Male</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
-      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="SEM15.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>ddfa610e-fb98-4e4f-9de5-30b671e3f6cc</tstamps>
-    </comp>
-    <comp ref="J9">
-      <value>Conn_01x01_Male</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
-      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="SEM15.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>1d4ceb2e-59c1-49c7-ab3e-68f096c25c3f</tstamps>
     </comp>
     <comp ref="L1">
       <value>L</value>
@@ -679,7 +657,7 @@
     </comp>
     <comp ref="SW1">
       <value>SW_DPST_x2</value>
-      <footprint>sajat:SW_Push_K2-1102SP</footprint>
+      <footprint>sajat:SW_Push_TS-1187A</footprint>
       <libsource lib="Switch" part="SW_DPST_x2" description="Single Pole Single Throw (SPST) switch, separate symbol"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="SEM15.kicad_sch"/>
@@ -878,6 +856,14 @@
         <pin num="16" name="P3.7" type="bidirectional"/>
       </pins>
     </libpart>
+    <libpart lib="kikit" part="Tab">
+      <description>KiKit tab annotations</description>
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">Tab</field>
+        <field name="Footprint">kikit:Tab</field>
+      </fields>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
@@ -989,8 +975,6 @@
       <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J9" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="L4" pin="2" pinfunction="2" pintype="passive"/>
