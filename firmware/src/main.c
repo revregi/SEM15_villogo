@@ -140,7 +140,7 @@ void main( void )
       EA = 0;   // Disable all interrupts
       TR0 = 0;  // Stop Timer 0
       ET0 = 0;  // Disable Timer 0 interrupt
-      EX0 = 1;  // Enable INT0 interrupt
+      INTCLKO |= (1u<<4u);  // Enable INT2 interrupt (EX2)
       P1 = 0xFFu;  // Set all pins to 1
       P3 = 0xFFu;
       P5 = 0x3Fu;
@@ -220,7 +220,7 @@ void main( void )
               EA = 0;   // Disable all interrupts
               TR0 = 0;  // Stop Timer 0
               ET0 = 0;  // Disable Timer 0 interrupt
-              EX0 = 1;  // Enable INT0 interrupt
+              INTCLKO |= (1u<<4u);  // Enable INT2 interrupt (EX2)
               P1 = 0xFFu;  // Set all pins to 1
               P3 = 0xFFu;
               P5 = 0x3Fu;
@@ -257,13 +257,13 @@ void main( void )
 }
 
 //----------------------------------------------------------------------------
-//! \brief  INT0 interrupt handler
+//! \brief  INT2 interrupt handler
 //! \param  -
 //! \return -
-//! \note   Should be placed at 0x0003 (==IT vector 0).
+//! \note   Should be placed at 0x0053 (==IT vector 10).
 //-----------------------------------------------------------------------------
-#pragma vector=0x0003
-IT_PRE void INT0_ISR( void ) ITVECTOR0
+#pragma vector=0x0053
+IT_PRE void INT2_ISR( void ) ITVECTOR10
 {
   // Normally, only after waking up from power down mode should lead to here
   // Perform software reset
