@@ -27,3 +27,6 @@ fp-info-cache
 # Exported BOM files
 #*.xml
 #*.csv
+/firmware/project/karifa.uvgui.8051Dev
+/firmware/project/Listings
+/firmware/project/Objects
