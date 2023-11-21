@@ -87,9 +87,9 @@ void BatteryLevel_Show( void )
   for( u8Index = 0u; u8Index < LEDS_NUM; u8Index++ )
   {
     gau8LEDBrightness[ u8Index ] = 15u;
-    Delay( 100u );
+    Delay( 150u );
   }
-  Delay( 100u );
+  Delay( 200u );
   // Measure battery voltage
   ADC_CONTR |= 0x40u;  // Start conversion
   _nop_();
