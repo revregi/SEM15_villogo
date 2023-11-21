@@ -83,29 +83,174 @@ typedef struct
 /***************************************< Constants >**************************************/
 //--------------------------------------------------------
 //! \brief KITT animation -- normal LEDs
-CODE const S_ANIMATION_INSTRUCTION_NORMAL gasKITT[ 12u ] = 
+CODE const S_ANIMATION_INSTRUCTION_NORMAL gasKITT[ 14u ] = 
 {
   {200u, { 0,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
-  {100u, { 5,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
-  {100u, {10,  5,  0,  0,  0,  0,  0 }, LOAD,  0u },
-  {100u, {15, 10,  5,  0,  0,  0,  0 }, LOAD,  0u },
-  {100u, {10, 15, 10,  5,  0,  0,  0 }, LOAD,  0u },
-  {100u, { 5, 10, 15, 10,  5,  0,  0 }, LOAD,  0u },
-  {100u, { 0,  5, 10, 15, 10,  5,  5 }, LOAD,  0u },
-  {100u, { 0,  0,  5, 10, 15, 10, 10 }, LOAD,  0u },
-  {100u, { 0,  0,  0,  5, 10, 15, 15 }, LOAD,  0u },
-  {100u, { 0,  0,  0,  0,  5, 10, 10 }, LOAD,  0u },
-  {100u, { 0,  0,  0,  0,  0,  5, 10 }, LOAD,  0u },
-  {100u, { 0,  0,  0,  0,  0,  0,  5 }, LOAD,  0u },
+  { 100u, { 5,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
+  { 100u, {10,  5,  0,  0,  0,  0,  0 }, LOAD,  0u },
+  { 100u, {15, 10,  5,  0,  0,  0,  0 }, LOAD,  0u },
+  { 100u, {10, 15, 10,  5,  0,  0,  0 }, LOAD,  0u },
+  { 100u, { 5, 10, 15, 10,  5,  0,  0 }, LOAD,  0u },
+  { 100u, { 0,  5, 10, 15, 10,  5,  0 }, LOAD,  0u },
+  { 100u, { 0,  0,  5, 10, 15, 10,  5,}, LOAD,  0u },
+	{ 100u, { 0,  0,  5, 10, 10, 15, 10 }, LOAD,  0u },
+  { 100u, { 0,  0,  0,  5, 10, 10, 15 }, LOAD,  0u },
+  { 100u, { 0,  0,  0,  0,  5, 10, 10 }, LOAD,  0u },
+  { 100u, { 0,  0,  0,  0,  0,  5, 10 }, LOAD,  0u },
+	{ 100u, { 0,  0,  0,  0,  0,  0,  5 }, LOAD,  0u },
+  {200u, { 0,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
 };
 //! \brief KITT animation -- RGB LED
-CODE const S_ANIMATION_INSTRUCTION_RGB gasKITTRGB[ 5u ] = 
+CODE const S_ANIMATION_INSTRUCTION_RGB gasKITTRGB[ 6u ] = 
 {
   { 100u, {  0,  0,  0,  0}, LOAD,         0u },
   { 100u, {  5,  0,  0,  0}, ADD | REPEAT, 2u },
-  { 100u, {  0,  5,  0,  0}, ADD | REPEAT, 2u },
-  { 100u, {  0,  0,  5,  5}, ADD | REPEAT, 2u },
-  { 300u, { 15, 15, 15, 15}, LOAD,         0u },
+  { 50u, {  0,  5,  0,  0}, ADD | REPEAT, 2u },
+  { 50u, {  0,  0,  5,  0}, ADD | REPEAT, 2u },
+	{ 50u, {  0,  0,  0,  5}, ADD | REPEAT, 2u },
+  {750u, { 15, 15, 15, 15}, LOAD,         0u },
+};
+
+//--------------------------------------------------------
+//! \brief KITT animation -- normal LEDs
+CODE const S_ANIMATION_INSTRUCTION_NORMAL gasAnimation2[ 13u ] = 
+{
+  {  115u, {  0,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
+  {  115u, {  3,  3,  3,  3,  3,  3,  3 }, ADD | REPEAT,  4u },
+  {  115u, { -3, -3, -3, -3, -3, -3, -3 }, ADD | REPEAT,  4u },
+};
+//! \brief KITT animation -- RGB LED
+CODE const S_ANIMATION_INSTRUCTION_RGB gasAnimation2RGB[ 6u ] = 
+{
+  {  115u, {  0,  0,  0,  0}, LOAD,         0u },
+  {  115u, {  3,  3,  3,  3}, ADD | REPEAT, 4u },
+  {  115u, { -3, -3, -3, -3}, ADD | REPEAT, 4u },
+};
+
+//--------------------------------------------------------
+//! \brief KITT animation -- normal LEDs
+CODE const S_ANIMATION_INSTRUCTION_NORMAL gasAnimation3[ 4u ] = 
+{
+  {  70u, { 15, 15, 15, 15, 15, 15, 15 }, LOAD,           0u },
+  {  70u, { -1, -1, -1, -1, -1, -1, -1 }, ADD | REPEAT,  14u },
+  {  70u, {  0,  0,  0,  0,  0,  0,  0 }, LOAD,           0u },
+  {  70u, {  1,  1,  1,  1,  1,  1,  1 }, ADD | REPEAT,  14u },
+};
+//! \brief KITT animation -- RGB LED
+CODE const S_ANIMATION_INSTRUCTION_RGB gasAnimation3RGB[ 4u ] = 
+{
+  {  70u, { 15, 15,  0,  0}, LOAD,          0u },
+  {  70u, { -1, -1,  1,  1}, ADD | REPEAT, 14u },
+  {  70u, {  0,  0, 15, 15}, LOAD,          0u },
+  {  70u, {  1,  1, -1, -1}, ADD | REPEAT, 14u },
+};
+
+
+//--------------------------------------------------------
+//! \brief KITT animation -- normal LEDs
+CODE const S_ANIMATION_INSTRUCTION_NORMAL gasAnimation4[ 14u ] = 
+{
+  {  125u, {  0,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
+  {  125u, {  0,  0,  3,  0,  0,  0,  0 }, LOAD,  0u },
+  {  125u, {  0,  3,  6,  3,  0,  0,  0 }, LOAD,  0u },
+  {  125u, {  3,  6,  9,  6,  3,  0,  0 }, LOAD,  0u },
+  {  125u, {  6,  9, 12,  9,  6,  3,  0 }, LOAD,  0u },
+  {  125u, {  9, 12, 15, 12,  9,  6,  3 }, LOAD,  0u },
+  {  125u, { 12, 15, 15, 15, 12,  9,  6 }, LOAD,  0u },
+  {  125u, { 15, 15, 12, 15, 15, 12,  9 }, LOAD,  0u },
+  {  125u, { 15, 12,  9, 12, 15, 15, 12 }, LOAD,  0u },
+  {  125u, { 12,  9,  6,  9, 12, 15, 15 }, LOAD,  0u },
+  {  125u, { -3, -3, -3, -3, -3, -3, -3 }, ADD | REPEAT,  1u},
+  {  125u, {  3,  0,  0,  0,  3,  6,  9 }, LOAD,  0u },
+  {  125u, {  0,  0,  0,  0,  0,  3,  6 }, LOAD,  0u },
+  {  125u, {  0,  0,  0,  0,  0,  0,  3 }, LOAD,  0u },
+};
+//! \brief KITT animation -- RGB LED
+CODE const S_ANIMATION_INSTRUCTION_RGB gasAnimation4RGB[ 10u ] = 
+{
+  { 250u, {  0,  0,  0,  0}, LOAD,         0u },
+  {  125u, {  0,  0,  3,  0}, LOAD,         0u },
+  {  125u, {  0,  3,  6,  0}, LOAD,         0u },
+  {  125u, {  3,  3,  3,  2}, ADD | REPEAT, 2u },
+  {  125u, { 12, 15, 15, 8}, LOAD,         0u },
+  {  125u, { 15, 15, 12, 8}, LOAD,         0u },
+  {  125u, { 15, 12,  9, 8}, LOAD,         0u },
+  {  125u, { -3, -3, -3, -2}, ADD | REPEAT, 2u },
+  {  125u, {  3,  0,  0,  0}, LOAD,         0u },
+  { 250u, {  0,  0,  0,  0}, LOAD,         0u },
+};
+
+//--------------------------------------------------------
+//! \brief KITT animation -- normal LEDs
+CODE const S_ANIMATION_INSTRUCTION_NORMAL gasAnimation5[ 4u ] = 
+{
+  {1525u, {  0,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
+  {  75u, {  3,  3,  3,  3,  3,  3,  3 }, ADD | REPEAT,  4u },
+  {  75u, { -3, -3, -3, -3, -3, -3, -3 }, ADD | REPEAT,  4u },
+  { 450u, {  0,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
+};
+//! \brief KITT animation -- RGB LED
+CODE const S_ANIMATION_INSTRUCTION_RGB gasAnimation5RGB[ 7u ] = 
+{
+  {  75u, {  0,  0,  0,  0}, LOAD,         0u },
+  {  75u, {  3,  0,  0,  0}, ADD | REPEAT, 4u },
+  {  75u, { -3,  0,  0,  0}, ADD | REPEAT, 4u },
+  {  75u, {  0,  3,  0,  0}, ADD | REPEAT, 4u },
+  {  75u, {  0, -3,  0,  0}, ADD | REPEAT, 4u },
+  { 750u, {  0,  0,  0,  0}, LOAD,         0u },
+  { 450u, {  0,  0, 15, 15}, LOAD,         0u },
+};
+
+//--------------------------------------------------------
+//! \brief KITT animation -- normal LEDs
+CODE const S_ANIMATION_INSTRUCTION_NORMAL gasAnimation6[ 10u ] = 
+{
+  {  120u, {  0,  0,  0,  0,  0,  0,  0 }, LOAD,  0u },
+  {  120u, {  0,  0,  0,  0,  0,  0,  3 }, LOAD,  0u },
+  {  120u, {  0,  0,  0,  0,  0,  3,  6 }, LOAD,  0u },
+  {  120u, {  3,  0,  0,  0,  3,  6,  9 }, LOAD,  0u },
+  {  120u, {  6,  3,  0,  3,  6,  9, 12 }, LOAD,  0u },
+  {  120u, {  9,  6,  3,  6,  9, 12, 15 }, LOAD,  0u },
+  {  120u, { 12,  9,  6,  9, 12, 15, 15 }, LOAD,  0u },
+  {  120u, { 15, 12,  9, 12, 15, 15, 15 }, LOAD,  0u },
+  {  120u, { 15, 15, 12, 15, 15, 15, 15 }, LOAD,  0u },
+  { 840u, { 15, 15, 15, 15, 15, 15, 15 }, LOAD,  0u },
+};
+//! \brief KITT animation -- RGB LED
+CODE const S_ANIMATION_INSTRUCTION_RGB gasAnimation6RGB[ 10u ] = 
+{
+  {  120u, {  0, 0, 0, 1 }, LOAD,  0u },
+  {  120u, {  0, 0, 0, 3 }, LOAD,  0u },
+  {  120u, {  0,  0,  0,  3}, LOAD,  0u },
+  {  120u, {  0,  0,  3,  6 }, LOAD,  0u },
+  {  120u, {  0,  0,  3,  6 }, LOAD,  0u },
+  {  120u, {  0,  3,  6,  9}, LOAD,  0u },
+  {  120u, { 0,  3,  6,  9}, LOAD,  0u },
+  {  120u, { 3, 6,  9, 12}, LOAD,  0u },
+  {  120u, { 6, 9, 12, 12}, LOAD,  0u },
+  { 840u, { 12, 12, 12, 12}, LOAD,  0u }
+};
+
+//--------------------------------------------------------
+//! \brief KITT animation -- normal LEDs
+CODE const S_ANIMATION_INSTRUCTION_NORMAL gasAnimation7[ 7u ] = 
+{
+  {220u, {15, 10,  5,  0,  0,  5, 10 }, LOAD,  0u },
+  {220u, {10, 15, 10,  5,  0,  0,  5 }, LOAD,  0u },
+  {220u, { 5, 10, 15, 10,  5,  0,  0 }, LOAD,  0u },
+  {220u, { 0,  5, 10, 15, 10,  5,  0 }, LOAD,  0u },
+  {220u, { 0,  0,  5, 10, 15, 10,  5,}, LOAD,  0u },
+	{220u, { 5,  0,  0,  5, 10, 15, 10 }, LOAD,  0u },
+  { 110u, {10,  5,  0,  0,  5, 10, 15 }, LOAD,  0u },
+};
+//! \brief KITT animation -- RGB LED
+CODE const S_ANIMATION_INSTRUCTION_RGB gasAnimation7RGB[ 6u ] = 
+{
+  { 110u, { 15,  0,  0, 15}, LOAD,         0u },
+	{ 110u, {  0,  5,  0, -5}, ADD | REPEAT, 2u },
+  { 110u, { -5,  0,  5,  0}, ADD | REPEAT, 2u },
+  { 110u, {  0, -5,  0,  5}, ADD | REPEAT, 2u },
+  { 110u, {  5,  0, -5,  0}, ADD | REPEAT, 2u },
 };
 
 //--------------------------------------------------------
@@ -125,6 +270,18 @@ CODE const S_ANIMATION_INSTRUCTION_RGB gasBlacknessRGB[ 1u ] =
 CODE const S_ANIMATION gasAnimations[ NUM_ANIMATIONS ] = 
 {
   {sizeof(gasKITT)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),             gasKITT,             sizeof(gasKITTRGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),             gasKITTRGB },
+
+  {sizeof(gasAnimation2)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),             gasAnimation2,             sizeof(gasAnimation2RGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),             gasAnimation2RGB },
+
+  {sizeof(gasAnimation3)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),             gasAnimation3,             sizeof(gasAnimation3RGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),             gasAnimation3RGB },
+
+  {sizeof(gasAnimation4)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),             gasAnimation4,             sizeof(gasAnimation4RGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),             gasAnimation4RGB },
+
+  {sizeof(gasAnimation5)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),             gasAnimation5,             sizeof(gasAnimation5RGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),             gasAnimation5RGB },
+
+  {sizeof(gasAnimation6)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),             gasAnimation6,             sizeof(gasAnimation6RGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),             gasAnimation6RGB },
+
+  {sizeof(gasAnimation7)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),             gasAnimation7,             sizeof(gasAnimation7RGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),             gasAnimation7RGB },
 
   // Last animation, don't change its location
   {sizeof(gasBlackness)/sizeof(S_ANIMATION_INSTRUCTION_NORMAL),        gasBlackness,        sizeof(gasBlacknessRGB)/sizeof(S_ANIMATION_INSTRUCTION_RGB),        gasBlackness }

@@ -15,7 +15,7 @@
 
 
 /***************************************< Definitions >**************************************/
-#define NUM_ANIMATIONS        (2u)  //!< Number of animations implemented
+#define NUM_ANIMATIONS        (8u)  //!< Number of animations implemented
 
 
 /***************************************< Types >**************************************/
